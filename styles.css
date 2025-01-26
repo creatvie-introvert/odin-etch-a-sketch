@@ -29,4 +29,6 @@ h1 {
     max-width: 960px;
     max-height: 960px;
     border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
 }
