@@ -15,8 +15,11 @@ function createGrid(size) {
         square.style.border = `${borderSize}px solid lightgray`;
 
         square.addEventListener('mouseenter', () => {
-            square.style.backgroundColor = 'lightgray';
-        })
+            //square.style.backgroundColor = 'lightgray';
+            let randomColor = Math.floor(Math.random() * 16777215).toString(16);
+            
+            square.style.backgroundColor = '#' + randomColor;
+        });
 
         container.appendChild(square);
     }
